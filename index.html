@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Key phrases and an approximate summary of the site's content">
+    <!-- The subtitle is shown on SERPs page-->
+    <meta name="author" content="amirhossein rahmani"> <!-- the author name-->
+    <meta name="theme-color" content="#ffffff">
+    <!-- Set browser address bar color for mobile browsers, such as Chrome on Android.-->
+    <title>Auth</title> <!-- meta title => 30 > && <60 characters  ||||   first clickable line in SERPs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/styles/reset-custom.css">
+    <link rel="stylesheet" href="assets/styles/app.css">
+
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="login-wrapper">
+            <h1 class="form-title">
+                Login
+            </h1>
+            <div class="login-content">
+                <div class="login-row">
+                    <label for="email" class="input-label">Email</label>
+                    <input type="text" id="email" placeholder="hello@gmail.com" required minlength="4" autofocus>
+                    <span class="input-alert">too short length</span>
+                </div>
+                <div class="login-row">
+                    <label for="password" class="input-label">Password</label>
+                    <input type="password" id="password" placeholder="Your password" required minlength="3">
+                    <span class="input-alert">too short length</span>
+                    <i class="fa-regular fa-eye login-eye"></i>
+                </div>
+            </div>
+            <div class="login-actions">
+                <div class="login-toggle">
+                    <span class="login-toggle-text">Don't have an account? Register</span>
+                </div>
+                <button class="login-submit">login</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialog" hidden>
+        <p class="dialog-text">successfully login</p>
+    </div>
+
+    <script src="assets/scripts/app.js"></script>
+</body>
+
+</html>
